@@ -1,5 +1,4 @@
 FROM openjdk:15-jdk-alpine
 LABEL maintainer johnny.dieu@sheridancollege.ca
-EXPOSE 8080
-COPY target/HelloWorldDocker-0.0.1-SNAPSHOT.jar HelloWorldDocker.jar
+COPY target/HelloWorldDocker.jar HelloWorldDocker.jar
 ENTRYPOINT ["java","-jar","HelloWorldDocker.jar"]
